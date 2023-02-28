@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+
+  
+  max-width: 800px;
+  margin-right: 0;
+  margin-left: 0;
+
+}
+
+#carousel {
+  position: relative;
+}
+
+#left-arrow {
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+
+  background-color: white;
+}
+
+#right-arrow {
+  position: absolute;
+
+  top: 50%;
+  right: 0;
+
+  background-color: white;
+}
+
+
+#dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+
+  
+  position: absolute;
+
+  width: 100%;
+
+  bottom: 10px;
+}
+#dots-container .dot {
+  width: 8px;
+  height: 8px;
+
+  background-color: rgba(255,255,255,0.4);
+  border: 1px solid white;
+
+  border-radius: 50%;
+
+
+}
+
+#dots-container .dot.active {
+  background-color: rgba(255,255,255,1);
+
+}

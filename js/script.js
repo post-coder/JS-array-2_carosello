@@ -115,7 +115,7 @@ for (let i = 0; i < images.length; i++) {
   newThumbnail.style.height = `calc(100% / ${images.length})`;
 }
 
-// prendo le immagini create dal documento
+// prendo le immagini create dal documento usando il selettore con la classe che gli ho appena aggiunto
 const thumbnailElements = document.querySelectorAll("#carousel-thumbnails .thumbnail");
 // aggiungo la classe active alla prima immagine
 thumbnailElements[index].classList.add("active")
